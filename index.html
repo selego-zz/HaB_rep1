@@ -10,8 +10,8 @@
 <body>
   <header>
     <h1>Debrable</h1>
-    <nav>
-      <ul> <!-- <menu> -->
+    <nav> <!-- <menu> -->
+      <ul>
         <li>
           <a href="#Top10">Mi Top 10 Películas</a>
         </li>
@@ -34,6 +34,8 @@
           <li>El padrino Parte II</li>
           <li>Cadena Perpetua</li>
           <li>Pulp Fiction</li>
+        </ol>
+        <ol start="6">
           <li>El rey león</li>
           <li>Forrest Gump</li>
           <li>La vida es bella</li>
@@ -49,7 +51,8 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam excepturi quas sunt accusamus molestiae
           esse enim doloribus asperiores laudantium odio ipsa, ducimus quod deleniti, fugit nam sint cumque dolorum
           praesentium maiores impedit distinctio blanditiis exercitationem? Reprehenderit dignissimos quidem quisquam id
-          officia molestiae ab. Magni eveniet excepturi quibusdam deserunt nam voluptatem, nostrum adipisci consectetur
+          officia molestiae ab.</p>
+        <p>Magni eveniet excepturi quibusdam deserunt nam voluptatem, nostrum adipisci consectetur
           labore dolorem et perferendis eum repellendus molestiae unde perspiciatis quaerat eaque impedit vero
           recusandae? Laboriosam magnam soluta error numquam. Veniam blanditiis delectus nulla voluptate, nostrum
           placeat! Quis molestiae accusantium vero enim quisquam non facere architecto ratione aliquam omnis nesciunt
@@ -67,30 +70,49 @@
       <h2>Debra Smith</h2>
       <p>aqui escrito todo lo que se me ocurra</p>
       <!-- La información de contacto estaría bien meterla dentro de un <address> -->
-      <a href="mailto:debra_smith@example.com">debra_smith@example.com</a>
+      <address>
+        <a href="mailto:debra_smith@example.com">debra_smith@example.com</a>
+      </address>
     </aside>
     <!-- A la profe no lo gusta que esto sea directamente form, por que es algo que tiene funcionalidad
       -  además dentro de un form todo lo que haya debería ser del form, nada de texto plano como el título
       -  Mete esto dentro de un footer (footer del main) o una section
       -->
-    <form id="Mailto">
+    <footer>
+
       <h2>Mandame un mensaje</h2>
-      <!-- Estaría bien ligar más cada label al input, por lo que, 
-        -  por ejemplo, lo mete en listas, 
-        -  con la pareja label-input dentro de cada li 
-        -->
-      <label for="Nombre">Nombre:</label>
-      <input type="text" id="Nombre" required />
-      <label for="Email">E Mail:</label>
-      <input type="text" id="Email" name="Email" required />
-      <label for="Nacimiento">Fecha de Nacimiento</label>
-      <!-- OJO: Fecha es type="date" -->
-      <input type="text" id="Nacimiento" name="Nacimiento" required />
-      <label for="Comentarios">Fecha de Nacimiento</label>
-      <textarea id="Comentarios" name="Comentarios" rows="5" cols="50" placeholder="Comentarios aqui..."></textarea>
-      <input type="checkbox" name="Suscribe" id="Suscribe"><label for="Suscribe">Suscribirse a la newsletter</label>
-      <button type="submit">Enviar</button>
-    </form>
+      <form id="Mailto">
+        <!-- Estaría bien ligar más cada label al input, por lo que, 
+            -  por ejemplo, lo mete en listas, 
+            -  con la pareja label-input dentro de cada li 
+            -->
+        <ul>
+          <li>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" required />
+          </li>
+          <li>
+            <label for="Email">E Mail:</label>
+            <input type="text" id="Email" name="Email" required />
+          </li>
+          <li>
+            <label for="Nacimiento">Fecha de Nacimiento</label>
+            <!-- OJO: Fecha es type="date" -->
+            <input type="date" id="Nacimiento" name="Nacimiento" required />
+          </li>
+          <li>
+            <label for="Comentarios">Fecha de Nacimiento</label>
+            <textarea id="Comentarios" name="Comentarios" rows="5" cols="50"
+              placeholder="Comentarios aqui..."></textarea>
+          </li>
+          <li>
+            <input type="checkbox" name="Suscribe" id="Suscribe"><label for="Suscribe">Suscribirse a la
+              newsletter</label>
+          </li>
+        </ul>
+        <button type="submit">Enviar</button>
+      </form>
+    </footer>
   </main>
   <footer>
     <nav> <!-- dice que no lo considera nav por que no es navegación
