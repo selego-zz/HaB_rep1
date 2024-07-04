@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debrable</title>
+  </head>
+  <body>
+    <header>
+      <h1>Debrable</h1>
+      <nav>
+        <menu>
+          <li>
+            <a href="#top">Mi TOP 10 películas</a>
+          </li>
+          <li>
+            <a href="#viaje">Mi viaje a Japón</a>
+          </li>
+          <li>
+            <a href="#mensaje">Mándame un mensaje</a>
+          </li>
+        </menu>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <!-- <h2>Posts</h2> -->
+        <article id="top">
+          <h2>Mi top 10 películas</h2>
+
+          <!--           <ol>
+            <li>Pelicula 1</li>
+            <li>Pelicula 2</li>
+            <li>Pelicula 3</li>
+            <li>Pelicula 4</li>
+            <li>Pelicula 5</li>
+            <li>Pelicula 6</li>
+            <li>Pelicula 7</li>
+            <li>Pelicula 8</li>
+            <li>Pelicula 9</li>
+            <li>Pelicula 10</li>
+          </ol> -->
+
+          <ol>
+            <li>Película 1</li>
+            <li>Película 2</li>
+            <li>Película 3</li>
+            <li>Película 4</li>
+            <li>Película 5</li>
+          </ol>
+
+          <ol start="6">
+            <li>película 6</li>
+            <li>película 7</li>
+            <li>película 8</li>
+            <li>película 9</li>
+            <li>película 10</li>
+          </ol>
+        </article>
+
+        <article id="viaje">
+          <h2>Mi viaje a japón</h2>
+          <img
+            height="300"
+            src="https://viajes.nationalgeographic.com.es/medio/2024/02/26/hanami-japon_00000000_9338775e_240226115558_800x800.jpg"
+            alt="Templo de Japón"
+          />
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            porro nemo eos sint possimus quis cumque natus, exercitationem error
+            consectetur accusamus doloremque nihil voluptas ut earum
+            consequuntur culpa repudiandae dolor labore? Dolorem fuga hic
+            voluptas harum maxime dolor minima itaque!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            quo corporis reprehenderit ut molestias dolor?
+          </p>
+        </article>
+      </section>
+      <aside>
+        <img
+          height="100"
+          src="https://as2.ftcdn.net/v2/jpg/03/49/49/79/1000_F_349497933_Ly4im8BDmHLaLzgyKg2f2yZOvJjBtlw5.jpg"
+          alt=""
+        />
+        <h2>Debra Smith</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <address>
+          <p>
+            <a href="mailto:debra.smith@example.com">debra.smith@example.com</a>
+          </p>
+        </address>
+      </aside>
+
+      <section id="mensaje">
+        <h2>Mándame un mensaje</h2>
+        <form>
+          <ul>
+            <li>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </li>
+            <li>
+              <label for="dob">Fecha de nacimiento</label>
+              <input type="date" id="dob" name="dob" required />
+            </li>
+            <li>
+              <label for="coment">Comentario</label>
+              <textarea
+                name="coment"
+                id="coment"
+                cols="30"
+                rows="10"
+                placeholder="Ecribe aquí todo lo que quieras"
+              ></textarea>
+            </li>
+            <li>
+              <input type="checkbox" id="news" name="news" />
+              <label for="news">Suscribirse a newsletter</label>
+            </li>
+          </ul>
+          <button>Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <menu>
+        <li><a href="">Términos y condiciones</a></li>
+        <li><a href="">Política de privacidad</a></li>
+      </menu>
+    </footer>
+  </body>
+</html>
